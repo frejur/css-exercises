@@ -2,6 +2,20 @@
 you'll learn about it later. */
 @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
 
+.header, .nav, .profile, .links {
+  display: flex;
+}
+
+.header {
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.nav, .links, .profile {
+  gap: 16px;
+  align-items: center;
+}
+
 body {
   margin: 0;
   background: #eee;
@@ -27,6 +41,7 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  flex: auto;
 }
 
 button {
@@ -45,4 +60,6 @@ a {
 
 ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
